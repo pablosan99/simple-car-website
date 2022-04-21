@@ -19,9 +19,65 @@ const defaultConfiguratorContext: CarConfiguratorContextType = {
         name: "Car Smart",
         colors: ["Black", "Yellow"],
         versions: ["S", "M", "L"],
+        pricing: {
+          basePrice: 50000,
+          colorPrice: [
+            {
+              version: "Black",
+              price: 2000,
+            },
+            {
+              version: "Yellow",
+              price: 1000,
+            }],
+          enginePrice: [
+            {
+              price: 3000,
+              version: "1.0 MT"
+            },
+            {
+              version: "1.0 AT",
+              price: 3000
+            },
+            {
+              version: "1.4 MT",
+              price: 2000
+            },
+            {
+              version: "1.5 AT",
+              price: 5000
+            }
+          ],
+          versionPrice: [
+            {
+              version: "Leather seats",
+              price: 200
+            },
+            {
+              version: "Heated seats",
+              price: 200
+            },
+            {
+              version: "Navigation",
+              price: 250
+            },
+            {
+              version: "Parking assist",
+              price: 1000
+            },
+            {
+              version: "Rear view camera",
+              price: 1000
+            },
+            {
+              version: "Seat heating",
+              price: 1000
+            }
+          ]
+        },
         equipment: {
           S: ["Heated seats", "Leather seats"],
-          M: ["Heated seats", "Leather seats", "Navigation", "Parking assist", ],
+          M: ["Heated seats", "Leather seats", "Navigation", "Parking assist"],
           L: ["Leather seats", "Navigation", "Parking assist", "Rear view camera", "Seat heating"],
           Business: [],
           GTLine: []
@@ -34,9 +90,65 @@ const defaultConfiguratorContext: CarConfiguratorContextType = {
         name: "Car Medium",
         colors: ["LightBlue", "Pink"],
         versions: ["S", "M", "L", "Business"],
+        pricing: {
+          basePrice: 54499,
+          colorPrice: [
+            {
+              version: "LightBlue",
+              price: 2000,
+            },
+            {
+              version: "Pink",
+              price: 1000,
+            }],
+          enginePrice: [
+            {
+              price: 3000,
+              version: "1.0 MT"
+            },
+            {
+              version: "1.0 AT",
+              price: 3000
+            },
+            {
+              version: "1.4 MT",
+              price: 2000
+            },
+            {
+              version: "1.5 AT",
+              price: 5000
+            }
+          ],
+          versionPrice: [
+            {
+              version: "Leather seats",
+              price: 200
+            },
+            {
+              version: "Heated seats",
+              price: 200
+            },
+            {
+              version: "Navigation",
+              price: 250
+            },
+            {
+              version: "Parking assist",
+              price: 1000
+            },
+            {
+              version: "Rear view camera",
+              price: 1000
+            },
+            {
+              version: "Seat heating",
+              price: 1000
+            }
+          ]
+        },
         equipment: {
           S: ["Heated seats", "Leather seats"],
-          M: ["Heated seats", "Leather seats", "Navigation", "Parking assist", ],
+          M: ["Heated seats", "Leather seats", "Navigation", "Parking assist",],
           L: ["Heated seats", "Leather seats", "Navigation", "Parking assist", "Rear view camera", "Seat heating"],
           Business: ["Seat memory"],
           GTLine: []
@@ -49,10 +161,71 @@ const defaultConfiguratorContext: CarConfiguratorContextType = {
         name: "Car Evolution",
         colors: ["LightBlue", "Pink", "Yellow"],
         versions: ["S", "M", "L", "Business"],
+        pricing: {
+          basePrice: 55000,
+          colorPrice: [
+            {
+              version: "LightBlue",
+              price: 2000,
+            },
+            {
+              version: "Pink",
+              price: 1000,
+            },
+            {
+              version: "Yellow",
+              price: 1500,
+            }
+            ],
+          enginePrice: [
+            {
+              price: 3000,
+              version: "1.0 MT"
+            },
+            {
+              version: "1.0 AT",
+              price: 3000
+            },
+            {
+              version: "1.4 MT",
+              price: 2000
+            },
+            {
+              version: "1.5 AT",
+              price: 5000
+            }
+          ],
+          versionPrice: [
+            {
+              version: "Leather seats",
+              price: 200
+            },
+            {
+              version: "Heated seats",
+              price: 200
+            },
+            {
+              version: "Navigation",
+              price: 250
+            },
+            {
+              version: "Parking assist",
+              price: 1000
+            },
+            {
+              version: "Rear view camera",
+              price: 1000
+            },
+            {
+              version: "Seat heating",
+              price: 1000
+            }
+          ]
+        },
         equipment: {
           S: ["Heated seats", "Leather seats"],
-          M: ["Heated seats", "Leather seats", "Navigation", "Parking assist", ],
-          L: ["Heated seats", "Leather seats", "Navigation", "Parking assist", "Rear view camera", "Seat heating" ],
+          M: ["Heated seats", "Leather seats", "Navigation", "Parking assist",],
+          L: ["Heated seats", "Leather seats", "Navigation", "Parking assist", "Rear view camera", "Seat heating"],
           Business: [],
           GTLine: []
         }
@@ -64,9 +237,69 @@ const defaultConfiguratorContext: CarConfiguratorContextType = {
         name: "Car Evolution 2",
         colors: ["LightBlue", "Pink", "Yellow"],
         versions: ["S", "M", "L", "Business"],
+        pricing: {
+          basePrice: 60000,
+          colorPrice: [
+            {
+              version: "LightBlue",
+              price: 2000,
+            },
+            {
+              version: "Pink",
+              price: 1000,
+            },
+            {
+              version: "Yellow",
+              price: 1000,
+            }],
+          enginePrice: [
+            {
+              price: 3000,
+              version: "1.0 MT"
+            },
+            {
+              version: "1.0 AT",
+              price: 3000
+            },
+            {
+              version: "1.4 MT",
+              price: 2000
+            },
+            {
+              version: "1.5 AT",
+              price: 5000
+            }
+          ],
+          versionPrice: [
+            {
+              version: "Leather seats",
+              price: 200
+            },
+            {
+              version: "Heated seats",
+              price: 200
+            },
+            {
+              version: "Navigation",
+              price: 250
+            },
+            {
+              version: "Parking assist",
+              price: 1000
+            },
+            {
+              version: "Rear view camera",
+              price: 1000
+            },
+            {
+              version: "Seat heating",
+              price: 1000
+            }
+          ]
+        },
         equipment: {
           S: ["Heated seats", "Leather seats"],
-          M: ["Heated seats", "Leather seats", "Navigation", "Parking assist", ],
+          M: ["Heated seats", "Leather seats", "Navigation", "Parking assist",],
           L: ["Heated seats", "Leather seats", "Navigation", "Parking assist", "Rear view camera", "Seat heating"],
           Business: [],
           GTLine: []
@@ -79,9 +312,74 @@ const defaultConfiguratorContext: CarConfiguratorContextType = {
         name: "Car Stars",
         colors: ["LightBlue", "Pink", "Yellow", "Silver"],
         versions: ["S", "M", "L", "Business"],
+        pricing: {
+          basePrice: 77000,
+          colorPrice: [
+            {
+              version: "LightBlue",
+              price: 2000,
+            },
+            {
+              version: "Pink",
+              price: 1000,
+            },
+            {
+              version: "Yellow",
+              price: 2000,
+            },
+            {
+              version: "Silver",
+              price: 1000,
+            }
+          ],
+          enginePrice: [
+            {
+              price: 3000,
+              version: "1.0 MT"
+            },
+            {
+              version: "1.0 AT",
+              price: 3000
+            },
+            {
+              version: "1.4 MT",
+              price: 2000
+            },
+            {
+              version: "1.5 AT",
+              price: 5000
+            }
+          ],
+          versionPrice: [
+            {
+              version: "Leather seats",
+              price: 200
+            },
+            {
+              version: "Heated seats",
+              price: 200
+            },
+            {
+              version: "Navigation",
+              price: 250
+            },
+            {
+              version: "Parking assist",
+              price: 1000
+            },
+            {
+              version: "Rear view camera",
+              price: 1000
+            },
+            {
+              version: "Seat heating",
+              price: 1000
+            }
+          ]
+        },
         equipment: {
           S: ["Heated seats", "Leather seats"],
-          M: ["Heated seats", "Leather seats", "Navigation", "Parking assist", ],
+          M: ["Heated seats", "Leather seats", "Navigation", "Parking assist",],
           L: ["Heated seats", "Leather seats", "Navigation", "Parking assist", "Rear view camera", "Seat heating"],
           Business: [],
           GTLine: []
@@ -94,9 +392,65 @@ const defaultConfiguratorContext: CarConfiguratorContextType = {
         name: "Car Max",
         colors: ["LightBlue", "Pink", "Yellow", "Silver"],
         versions: ["S", "M", "L", "Business"],
+        pricing: {
+          basePrice: 80000,
+          colorPrice: [
+            {
+              version: "Black",
+              price: 2000,
+            },
+            {
+              version: "Yellow",
+              price: 1000,
+            }],
+          enginePrice: [
+            {
+              price: 3000,
+              version: "1.0 MT"
+            },
+            {
+              version: "1.0 AT",
+              price: 3000
+            },
+            {
+              version: "1.4 MT",
+              price: 2000
+            },
+            {
+              version: "1.5 AT",
+              price: 5000
+            }
+          ],
+          versionPrice: [
+            {
+              version: "Leather seats",
+              price: 200
+            },
+            {
+              version: "Heated seats",
+              price: 200
+            },
+            {
+              version: "Navigation",
+              price: 250
+            },
+            {
+              version: "Parking assist",
+              price: 1000
+            },
+            {
+              version: "Rear view camera",
+              price: 1000
+            },
+            {
+              version: "Seat heating",
+              price: 1000
+            }
+          ]
+        },
         equipment: {
           S: ["Heated seats", "Leather seats"],
-          M: ["Heated seats", "Leather seats", "Navigation", "Parking assist", ],
+          M: ["Heated seats", "Leather seats", "Navigation", "Parking assist",],
           L: ["Heated seats", "Leather seats", "Navigation", "Parking assist", "Rear view camera", "Seat heating"],
           Business: [],
           GTLine: []
@@ -109,6 +463,72 @@ const defaultConfiguratorContext: CarConfiguratorContextType = {
         name: "Car Super Max",
         colors: ["LightBlue", "Pink", "Yellow", "Silver"],
         versions: ["Business", "GTLine"],
+        pricing: {
+          basePrice: 100000,
+          colorPrice: [
+            {
+              version: "LightBlue",
+              price: 2000,
+            },
+            {
+              version: "Pink",
+              price: 1000,
+            },
+            {
+              version: "Yellow",
+              price: 2000,
+            },
+            {
+              version: "Silver",
+              price: 1000,
+            }
+            
+          ],
+          enginePrice: [
+            {
+              price: 3000,
+              version: "1.0 MT"
+            },
+            {
+              version: "1.0 AT",
+              price: 3000
+            },
+            {
+              version: "1.4 MT",
+              price: 2000
+            },
+            {
+              version: "1.5 AT",
+              price: 5000
+            }
+          ],
+          versionPrice: [
+            {
+              version: "Leather seats",
+              price: 200
+            },
+            {
+              version: "Heated seats",
+              price: 200
+            },
+            {
+              version: "Navigation",
+              price: 250
+            },
+            {
+              version: "Parking assist",
+              price: 1000
+            },
+            {
+              version: "Rear view camera",
+              price: 1000
+            },
+            {
+              version: "Seat heating",
+              price: 1000
+            }
+          ]
+        },
         equipment: {
           S: [],
           M: [],
