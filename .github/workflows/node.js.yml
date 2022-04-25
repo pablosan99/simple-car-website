@@ -21,13 +21,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
+    - uses: enriikke/gatsby-gh-pages-action@v2
       with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-        cache-dependency-path: frontend/package-lock.json
-    - run: npm ci
-      working-directory: ./frontend
-    - run: npm run build --if-present
-      working-directory: ./frontend
+         access-token: ${{ secrets.SIMPLE_CAR_WEBSITE_TOKEN }}
+         working-dir: ./frontend
+    
