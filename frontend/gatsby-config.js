@@ -1,5 +1,6 @@
 /** @type {import('gatsby').GatsbyConfig} */
 module.exports = {
+    pathPrefix: '/simple-car-website',
     siteMetadata: {
         title: `Car Configurator`,
         siteUrl: `https://www.car-configurator.sii.pl`
