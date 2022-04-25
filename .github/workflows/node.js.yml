@@ -25,4 +25,4 @@ jobs:
       with:
          access-token: ${{ secrets.SIMPLE_CAR_WEBSITE_TOKEN }}
          working-dir: ./frontend
-    
+         gatsby-args: --prefix-paths
