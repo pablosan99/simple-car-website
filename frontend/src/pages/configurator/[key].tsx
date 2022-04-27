@@ -7,8 +7,8 @@ type Props = {
   params: string;
 }
 
-export default function Configurator({params}: Props) {
-
+export default function Configurator(props: Props) {
+  console.log(props);
   return (
     <Layout>
       <Grid container>
@@ -18,7 +18,7 @@ export default function Configurator({params}: Props) {
           </Button>
         </Grid>
         <Grid item>
-          Car configuration details {params}
+          Car configuration details
         </Grid>
       </Grid>
     </Layout>

@@ -53,10 +53,6 @@ module.exports = {
                 "path": "./src/pages/"
             },
             __key: "pages"
-        },
-        {
-            resolve: "gatsby-transformer-remark",
-            options: {}
         }
     ]
 };
