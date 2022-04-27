@@ -6,7 +6,6 @@ type Props = {
 }
 
 const CarPaper = styled(Paper)(({theme}) => ({
-  height: `calc(100vh - 90px)`,
   border: `1px solid ${theme.palette.grey[100]}`
 }));
 

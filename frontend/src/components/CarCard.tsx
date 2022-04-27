@@ -1,6 +1,6 @@
 ﻿import React from 'react';
 import { Box, Card, CardActionArea, CardContent, Typography } from '@mui/material';
-import { navigate } from 'gatsby';
+import { Link, navigate } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Model } from '../types/Types';
 
@@ -13,7 +13,7 @@ export default function CarCard(props: Props) {
   const { model } = props;
   
   const handleClick = async () => {
-    await navigate(`/configurator/${model.code}`);
+    await navigate(`./configurator/${model.code}`);
   }
 
   return (
@@ -21,7 +21,7 @@ export default function CarCard(props: Props) {
       margin: 2
     }}
     >
-      <CardActionArea onClick={handleClick}>
+      <CardActionArea>
         <StaticImage
           src={"../images/car-2.jpg"}
           alt={model.name}
@@ -30,6 +30,7 @@ export default function CarCard(props: Props) {
         />
         <CardContent>
           <Typography variant="body1">{model.name}</Typography>
+          <Link to={`/${model.code}`}>See more ...</Link>
           <Box>
             <Typography variant="caption">Price from 1000zł</Typography>
           </Box>

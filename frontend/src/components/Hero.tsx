@@ -8,7 +8,7 @@ export default function Hero() {
       <StaticImage
         src={"../images/car-3.jpg"}
         alt="Hero image"
-        width={1600}
+        width={2200}
         height={550}
       />
     </Box>

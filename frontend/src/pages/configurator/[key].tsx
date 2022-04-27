@@ -18,7 +18,7 @@ export default function Configurator({params}: Props) {
           </Button>
         </Grid>
         <Grid item>
-          Car configuration details
+          Car configuration details {params}
         </Grid>
       </Grid>
     </Layout>

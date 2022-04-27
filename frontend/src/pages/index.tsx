@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 import Hero from '../components/Hero';
 import { Link } from 'gatsby';
 import { Box, Button, Typography } from '@mui/material';
+import Cars from '../components/Cars';
 
 const IndexPage = () => {
 
@@ -11,12 +12,13 @@ const IndexPage = () => {
       <Box display="flex" flexDirection="column" alignItems="center" p={2}>
         <Hero/>
         <Box mt={2}>
-          <Button variant="contained" color="secondary" component={Link} to="/car-selector">
+          <Button variant="contained" color="primary" component={Link} to="/car-selector">
             <Typography variant="body1">
-              Configurator
+              Configure Your Car
             </Typography>
           </Button>
         </Box>
+        <Cars />
       </Box>
     </Layout>
   )

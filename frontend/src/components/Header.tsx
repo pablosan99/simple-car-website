@@ -17,7 +17,7 @@ export default function Header(props: Props) {
   } = props;
   
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1, margin: 0 }}>
       <AppBar position="static" color="primary">
         <Toolbar>
           <IconButton
