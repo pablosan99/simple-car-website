@@ -1,5 +1,5 @@
-﻿import theme from '../themes/theme';
-import Header from './Header';
+﻿import Header from './Header';
+import theme from '../themes/theme';
 import Menu from './Menu';
 import * as React from 'react';
 import { useState } from 'react';
@@ -21,7 +21,7 @@ export default function Layout({children}: Props) {
   const handleCloseMenu = () => {
     setOpenMenu(false)
   }
-  
+
   return (
     <ThemeProvider theme={theme}>
       <Header title="Car Dealer website" onToggleMenu={handleToggleMenu}/>
@@ -31,5 +31,5 @@ export default function Layout({children}: Props) {
       </Content>
     </ThemeProvider>
   )
-  
+
 }

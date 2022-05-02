@@ -7,18 +7,22 @@ const RadioGroupStyled = styled(RadioGroup)`
   flex-direction: row;
 `
 
-export default function CategorySelector() {
+type Props = {
+  onSelectCategory: (category: Category) => void;
+}
+
+export default function CategorySelector(props: Props) {
   
   const categories: Category[] = ["CombustionEngine", "ElectricEngine", "Hybrid", "City", "SUV", "GT"] 
   
   const handleCategoryChange = (event: React.ChangeEvent<HTMLInputElement>, value: string) => {
     const selectedCategory = value as Category;
-    debugger;
+    props.onSelectCategory(selectedCategory);
   }
   
   return (
     <Box display="flex" flexDirection="row" m={2}>
-      <RadioGroupStyled defaultValue={"CombustionEngine"} onChange={handleCategoryChange}>
+      <RadioGroupStyled defaultValue={undefined} onChange={handleCategoryChange}>
       {
         categories.map((category, idx) => (
           <FormControlLabel key={idx} value={category} control={<Radio />} label={category} />
