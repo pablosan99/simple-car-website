@@ -11,7 +11,7 @@ type Props = {
 export default function CarCard(props: Props) {
 
   const { model } = props;
-  
+
   const handleClick = async () => {
     await navigate(`./configurator/${model.code}`);
   }

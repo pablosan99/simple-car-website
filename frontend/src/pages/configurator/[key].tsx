@@ -8,13 +8,13 @@ type Props = {
 }
 
 export default function Configurator(props: Props) {
-  console.log(props);
+  console.log(`props`, props);
   return (
     <Layout>
       <Grid container>
         <Grid item xs={12}>
-          <Button variant="text" component={Link} to="/car-selector" sx={{ textTransform: "none"}}>
-               « back
+          <Button variant="text" component={Link} to="/car-selector" sx={{ textTransform: "none" }}>
+            « back
           </Button>
         </Grid>
         <Grid item>

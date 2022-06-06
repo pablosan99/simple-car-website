@@ -28,7 +28,7 @@ export default function Cars() {
       }
   }
 `)
-  const {allMdx, allFile} = data;
+  const { allMdx, allFile } = data;
 
   return (
     <div>
@@ -38,7 +38,7 @@ export default function Cars() {
       <Grid container spacing={1}>
         {allMdx.nodes.map((node: any, idx: number) => {
           const imgNode = allFile.nodes.find((x: any) => x.name == node.slug);
-           return <CarWidget key={idx} node={node} imgNode={imgNode}/>
+          return <CarWidget key={idx} node={node} imgNode={imgNode} />
         })}
       </Grid>
     </div>
